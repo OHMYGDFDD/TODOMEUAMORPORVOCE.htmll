@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 Meses de Amor</title>
+    <style>
+        /* Definindo o estilo global da página */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #f8d7da, #f1b0b7); /* Gradiente suave com tons de vermelho */
+            color: #333;
+            text-align: center;
+        }
+
+        /* Container principal */
+        .container {
+            max-width: 800px;
+            margin: 100px auto;
+            padding: 40px;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            font-size: 18px;
+            line-height: 1.6;
+            display: none; /* Inicialmente, escondido */
+        }
+
+        /* Título principal */
+        h1 {
+            color: #d54e21; /* Cor vermelha */
+            font-size: 48px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        /* Estilo para o texto destacado */
+        .highlight {
+            color: #d54e21;
+            font-weight: bold;
+        }
+
+        /* Estilo dos parágrafos */
+        p {
+            margin: 15px 0;
+            font-size: 20px;
+        }
+
+        /* Botão de ação */
+        .btn {
+            background-color: #d54e21; /* Cor vermelha */
+            color: white;
+            padding: 12px 30px;
+            font-size: 18px;
+            text-transform: uppercase;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 30px;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Efeito de hover no botão */
+        .btn:hover {
+            background-color: #b7411d; /* Cor vermelha mais escura */
+        }
+
+        /* Adicionando responsividade */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 36px;
+            }
+
+            p {
+                font-size: 18px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Botão para revelar o texto de amor -->
+    <div class="container" id="textContainer">
+        <h1>4 Meses nosso meu amor</h1>
+        <p><span class="highlight">4 meses de um amor único,</span> 4 meses que você me apresentou a vida de verdade, 4 meses sendo minha inspiração diária.</p>
+        <p>Você é um sonho que se tornou realidade.</p>
+        <p><span class="highlight">Eu te amo hoje, eu te amei ontem e amanhã eu vou te amar mais ainda.</span></p>
+        <p>Obrigado por tudo meu amor, daqui para toda a eternidade.</p>
+        <p class="highlight">PT1/PRESENTE 4 MESES.</p>
+
+        <button class="btn" onclick="alert('Feliz 4 meses!')">Comemorar</button>
+    </div>
+
+    <!-- Botão para mostrar o texto -->
+    <div class="initial-button">
+        <button class="btn" onclick="revelarTexto()">Clique Aqui</button>
+    </div>
+
+    <script>
+        function revelarTexto() {
+            // Esconde o botão "Clique Aqui"
+            document.querySelector('.initial-button').style.display = 'none';
+            // Mostra o conteúdo do texto
+            document.getElementById('textContainer').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
+
